@@ -1,27 +1,44 @@
+import img from '../../public/Ew1tr32T.jpg'
 export default function Hero() {
 	const styles = {
 		hero: {
 			width: '100%',
-			maxWidth: '1100px',
-			margin: '0 auto',
-
-			// backgroundColor: '#666666',
-			color: '#212121	',
-			padding: '60px 40px',
+			minHeight: '80vh',
+			position: 'relative',
+			background: `url(${img}) center/cover no-repeat`,
+			backgroundSize: 'cover',
 			display: 'flex',
-			flexDirection: 'column',
 			alignItems: 'center',
-			textAlign: 'center',
-			gap: '40px',
-			fontFamily: 'sans-serif'
+			justifyContent: 'center',
+			padding: '80px 20px',
+			fontFamily: 'sans-serif',
+			color: '#ffffff'
 		},
-		content: { flex: 1, maxWidth: '600px' },
-		title: { fontSize: '42px', fontWeight: 'bold', marginBottom: '20px' },
+		overlay: {
+			position: 'absolute',
+			inset: 0,
+			background: 'rgba(0, 0, 0, 0.45)'
+		},
+		content: {
+			position: 'relative',
+			zIndex: 2,
+			flex: 1,
+			maxWidth: '900px',
+			textAlign: 'center'
+		},
+		title: {
+			fontSize: '52px',
+			fontWeight: '800',
+			marginBottom: '24px',
+			color: '#ffffff',
+			textShadow: '0 18px 40px rgba(0, 0, 0, 0.25)'
+		},
 		description: {
-			fontSize: '16px',
-			lineHeight: '1.5',
-			marginBottom: '30px',
-			color: '#212121	'
+			fontSize: '18px',
+			lineHeight: '1.7',
+			marginBottom: '36px',
+			color: '#f7f7f8',
+			textShadow: '0 12px 30px rgba(0, 0, 0, 0.2)'
 		},
 		buttons: {
 			display: 'flex',
@@ -30,9 +47,9 @@ export default function Hero() {
 			marginBottom: '30px'
 		},
 		btnOutline: {
-			border: '1px solid #38bdf8',
-			background: 'transparent',
-			color: '#000000',
+			border: '1px solid rgba(255, 255, 255, 0.85)',
+			background: 'rgba(255, 255, 255, 0.12)',
+			color: '#ffffff',
 			padding: '12px 24px',
 			borderRadius: '8px',
 			cursor: 'pointer',
@@ -55,13 +72,6 @@ export default function Hero() {
 			padding: '6px 14px',
 			borderRadius: '6px',
 			fontSize: '13px'
-		},
-		imagePlaceholder: {
-			width: '100%',
-			maxWidth: '500px',
-			height: '300px',
-			backgroundColor: '#a3a3a3',
-			borderRadius: '4px'
 		}
 	}
 	const categories = [
@@ -73,7 +83,7 @@ export default function Hero() {
 	]
 	return (
 		<section style={styles.hero}>
-			{' '}
+			<div style={styles.overlay} />
 			<div style={styles.content}>
 				{' '}
 				<h1 style={styles.title}>Harmony of Nails</h1>{' '}
@@ -87,16 +97,7 @@ export default function Hero() {
 					<button style={styles.btnOutline}>Zobacz usługi</button>{' '}
 					<button style={styles.btnFilled}>Umów wizytę</button>{' '}
 				</div>{' '}
-				<div style={styles.tags}>
-					{' '}
-					{categories.map((cat, i) => (
-						<span key={i} style={styles.tag}>
-							{cat}
-						</span>
-					))}{' '}
-				</div>{' '}
-			</div>{' '}
-			<div style={styles.imagePlaceholder}></div>{' '}
+			</div>
 		</section>
 	)
 }

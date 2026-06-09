@@ -1,0 +1,61 @@
+[
+  {
+    "id": "pedicure",
+    "icon": "🦶",
+    "title": "Pedicure",
+    "subtitle": "Relaks i gładkość",
+    "description": "Pielęgnacja stóp + usuwanie zrogowaceń + masaż dla komfortu",
+    "badge": "Najczęściej wybierane",
+    "variants": [
+      {
+        "name": "Hybryda na paznokcie stóp",
+        "price": "120 zł",
+        "time": "1g 30min",
+        "infoText": "Gładkie, zadbane stopy z estetycznym wykończeniem"
+      },
+      {
+        "name": "Pedicure klasyczny bez malowania",
+        "price": "130 zł",
+        "time": "2g",
+        "infoText": "Gładkie, zadbane stopy z estetycznym wykończeniem"
+      }
+    ]
+  },
+  {
+    "id": "manicure",
+    "icon": "💅",
+    "title": "Manicure",
+    "subtitle": "Piękne i trwałe wykończenie",
+    "description": "Pielęgnacja skórek + nadanie kształtu + zabezpieczenie dla długiej trwałości",
+    "badge": null,
+    "variants": [
+      {
+        "name": "Przedłużanie 1 kolor - Ewelina",
+        "price": "210 zł+",
+        "time": "70–90 min",
+        "infoText": "Usługa zawiera opracowanie naturalnej płytki paznokcia oraz skórek, przedłużenie paznokci na formach dolnych, nałożenie koloru. Ściągnięcie starej masy żelowej lub hybrydowej nie jest zawarte w cenie."
+      },
+      {
+        "name": "Przedłużanie żelem + zdobienia - Ewelina",
+        "price": "230 zł+",
+        "time": "90–110 min",
+				"infoText": "Usługa zawiera opracowanie naturalnej płytki paznokcia oraz skórek, przedłużenie paznokci na formach dolnych, nałożenie koloru. Ściągnięcie starej masy żelowej lub hybrydowej nie jest zawarte w cenie.",
+        "_2infoText": "Usługa zawiera opracowanie stylizacji żelowej, po uprzednim ściągnięciu koloru, opracowanie skórek, uzupełnienie odrostu żelem, nałożenie koloru. Ściągnięcie starej stylizacji nie wykonanej w naszym salonie jest dodatkowo płatne."
+      },
+      {
+        "name": "Przedłużanie żelem 1 kolor - Klaudia",
+        "price": "170 zł+",
+        "time": "90–110 min",
+				"infoText": "Usługa zawiera opracowanie naturalnej płytki paznokcia oraz skórek, przedłużenie paznokci na formach dolnych, nałożenie koloru. Ściągnięcie starej masy żelowej lub hybrydowej nie jest zawarte w cenie.",
+        "_3infoText": "Usługa zawiera opracowanie naturalnej płytki paznokcia, opracowanie skórek, nałożenie bazy hybrydowej oraz koloru. Ściągnięcie poprzedniej masy hybrydowej wykonanej w naszym salonie zawarte jest w cenie usługi."
+      },
+      {
+        "name": "Przedłużanie żelem + zdobienia - Klaudia",
+        "price": "190 zł",
+        "time": "110–130 min",
+				"infoText": "Usługa zawiera opracowanie naturalnej płytki paznokcia oraz skórek, przedłużenie paznokci na formach dolnych, nałożenie koloru. Ściągnięcie starej masy żelowej lub hybrydowej nie jest zawarte w cenie.",
+        "_4infoText": "Dodatkowe czasłochłonne zdobienie. Jeżeli lubisz stylizacje, gdzie każdy paznokieć wygląda inaczej, dodaj tę opcję do usługi 😊"
+      }
+    ]
+  }
+]
