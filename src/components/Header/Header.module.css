@@ -1,12 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 .navbar {
-	width: 100%;
-	margin: 0 auto;
 	display: flex;
-	justify-content: space-between;
+	position: fixed;
+	top: 0;
+	z-index: 999;
+	width: 100vw;
+	/* justify-content: space-evenly; */
 	align-items: center;
-	border-bottom: 1px solid #e0e0e0;
-	background-color: #ffffff;
+	border-bottom: 1px solid var(--code-bg);
+	background-color: var(--code-bg);
 	font-family: sans-serif;
+
+	padding: 20px 25px;
 }
 .logoContainer {
 	display: flex;
@@ -16,26 +22,66 @@
 .logoCircle {
 	width: 32px;
 	height: 32px;
-	background-color: #e0e0e0;
+	background-color: var(--code-bg);
 	border-radius: 50%;
 }
 .logoText {
 	font-size: 22px;
 	font-weight: 700;
-	color: #000;
+	color: var(--text-h);
 }
 .navLinks {
 	display: flex;
 	justify-content: center;
+	/* width: 320px; */
 	gap: 24px;
 	list-style: none;
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 }
 .link {
 	text-decoration: none;
-	color: #333;
-	font-size: 15px;
-	font-weight: 500;
+	color: var(--text-h);
+	font-size: 16px;
+	font-family: 'Inter', 'Segoe UI', sans-serif;
+	font-weight: 400;
+	font-variation-settings: 'wght' 400;
 	cursor: pointer;
+	display: inline-block;
+	transition:
+		font-variation-settings 0.3s ease-in-out,
+		transform 0.2s ease;
+}
+
+.link:hover {
+	font-weight: 700;
+	font-variation-settings: 'wght' 700;
+	transform: translateY(-1px);
+}
+.navContacts {
+	display: flex;
+	justify-content: center;
+	gap: 24px;
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.mobileMenu {
+	display: none;
+}
+
+@media (max-width: 1024px) {
+	.navbar {
+		justify-content: space-between;
+	}
+
+	.navLinks,
+	.navContacts {
+		display: none;
+	}
+
+	.mobileMenu {
+		display: block;
+	}
 }

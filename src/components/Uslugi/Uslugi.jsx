@@ -11,15 +11,18 @@ export default function Uslugi() {
 
 	return (
 		<section className={styles.section} id='uslugi'>
-			<h2 className={styles.title}>Usługi — najczęściej wybierane</h2>
+			<h2 className={styles.title}>NASZA OFERTA</h2>
 			<p className={styles.subtitle}>
 				Wybierz to, czego potrzebujesz — od klasycznego manicure po kompleksowe
 				stylizacje.
 			</p>
 
 			<div className={styles.groupContainer}>
-				{Object.entries(groups).map(([groupTitle, items]) => (
-					<div key={groupTitle} className={styles.group}>
+				{Object.entries(groups).map(([groupTitle, items], index) => (
+					<div
+						key={groupTitle}
+						className={`${styles.group} ${index === 4 ? styles.spanningGroup : ''}`}
+					>
 						<h3 className={styles.groupTitle}>{groupTitle}</h3>
 						{items.map((item, idx) => (
 							<div key={item.id || idx} className={styles.item}>
@@ -33,7 +36,7 @@ export default function Uslugi() {
 												<span className={styles.variantName}>{v.name}</span>
 												<span className={styles.variantMeta}>
 													{v.price ? ` — ${v.price}` : ''}
-													{v.time ? ` • ${v.time}` : ''}
+													{v.time ? `  ${v.time}` : ''}
 												</span>
 											</li>
 										))

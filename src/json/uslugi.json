@@ -21,6 +21,117 @@
     ]
   },
   {
+    "id": "Stylizacja brwi",
+    "icon": "👁️",
+    "title": "Stylizacja brwi",
+    "subtitle": "",
+    "description": "",
+    "variants": [
+      {
+        "numOfVariants": "Wariant 1",
+        "name": "Laminacja brwi z farbką",
+        "price": "130 zł",
+        "time": "1g"
+      },
+      {
+        "numOfVariants": "Wariant 2",
+        "name": "stylizacja brwi z hennąpudrową",
+        "price": "70 zł",
+        "time": "30min"
+      },
+      {
+        "numOfVariants": "Wariant 3",
+        "name": "Regulacja brwi",
+        "price": "40 zł",
+        "time": "15min"
+      },
+            {
+        "numOfVariants": "Wariant 4",
+        "name": "Regulacja brwi + wąsik",
+        "price": "50 zł",
+        "time": "20min"
+      }
+    ]
+  },
+  {
+    "id": "Depilacja",
+    "icon": "🪒",
+    "title": "Depilacja",
+    "subtitle": "",
+    "description": "",
+    "variants": [
+      {
+        "numOfVariants": "Wariant 1",
+        "name": "Depilacja nad górną wargą",
+        "price": "20 zł",
+        "time": "15min"
+      },
+      {
+        "numOfVariants": "Wariant 2",
+        "name": "Depilacja brody",
+        "price": "30 zł",
+        "time": "30min"
+      },
+      {
+        "numOfVariants": "Wariant 3",
+        "name": "Depilacja Nad Górną Wargą + Broda",
+        "price": "40 zł",
+        "time": "25min"
+      }
+    ]
+  },
+  {
+    "id": "Stylizacja rzęs",
+    "icon": "👁️",
+    "title": "Stylizacja rzęs",
+    "subtitle": "",
+    "description": "",
+    "variants": [
+      {
+        "numOfVariants": "Wariant 1",
+        "name": "Założenie rzęs 'Połówka'",
+        "price": "90 zł",
+        "time": "1g"
+      },
+      {
+        "numOfVariants": "Wariant 2",
+        "name": "Założenie rzęs metodą 1:1",
+        "price": "150 zł",
+        "time": "1g 30min"
+      },
+      {
+        "numOfVariants": "Wariant 3",
+        "name": "Maskara",
+        "price": "160 zł",
+        "time": "1g 45min"
+      },
+      {
+        "numOfVariants": "Wariant 4",
+        "name": "Mokry Efekt",
+        "price": "170 zł",
+        "time": "1g 50min"
+      },
+      {
+        "numOfVariants": "Wariant 5",
+        "name": "Założenie 2:1",
+        "price": "170 zł",
+        "time": "1g 50min"
+      },
+      {
+        "numOfVariants": "Wariant 6",
+        "name": "Założenie 3-4D",
+        "price": "180 zł",
+        "time": "2g"
+      },
+      {
+        "numOfVariants": "Wariant 7",
+        "name": "Założenie 5-6D",
+        "price": "160 zł",
+        "time": "2g "
+      }
+    ]
+  },
+  {
     "id": "Manicure01",
     "icon": "💅",
     "title": "Manicure",
@@ -155,66 +266,6 @@
         "name": "Manicure Hybrydowy + French/Babyboomer/Ombre - Klaudia",
         "price": "160 zł",
         "time": "2g 30min"
-      }
-    ]
-  },
-  {
-    "id": "Stylizacja brwi",
-    "icon": "👁️",
-    "title": "Stylizacja brwi",
-    "subtitle": "",
-    "description": "",
-    "variants": [
-      {
-        "numOfVariants": "Wariant 1",
-        "name": "Laminacja brwi z farbką",
-        "price": "130 zł",
-        "time": "1g"
-      },
-      {
-        "numOfVariants": "Wariant 2",
-        "name": "stylizacja brwi z hennąpudrową",
-        "price": "70 zł",
-        "time": "30min"
-      },
-      {
-        "numOfVariants": "Wariant 3",
-        "name": "Regulacja brwi",
-        "price": "40 zł",
-        "time": "15min"
-      },
-            {
-        "numOfVariants": "Wariant 4",
-        "name": "Regulacja brwi + wąsik",
-        "price": "50 zł",
-        "time": "20min"
-      }
-    ]
-  },
-  {
-    "id": "Depilacja",
-    "icon": "🪒",
-    "title": "Depilacja",
-    "subtitle": "",
-    "description": "",
-    "variants": [
-      {
-        "numOfVariants": "Wariant 1",
-        "name": "Depilacja nad górną wargą",
-        "price": "20 zł",
-        "time": "15min"
-      },
-      {
-        "numOfVariants": "Wariant 2",
-        "name": "Depilacja brody",
-        "price": "30 zł",
-        "time": "30min"
-      },
-      {
-        "numOfVariants": "Wariant 3",
-        "name": "Depilacja Nad Górną Wargą + Broda",
-        "price": "40 zł",
-        "time": "25min"
       }
     ]
   }

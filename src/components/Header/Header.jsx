@@ -1,3 +1,4 @@
+import BurgerMenu from '../BurgerMenu/BurgerMenu'
 import styles from './Header.module.css'
 
 export default function Navbar() {
@@ -7,6 +8,7 @@ export default function Navbar() {
 				<div className={styles.logoCircle}></div>
 				<span className={styles.logoText}>Harmony of Nails</span>
 			</div>
+
 			<ul className={styles.navLinks}>
 				<li>
 					<a href='#uslugi' className={styles.link}>
@@ -34,6 +36,23 @@ export default function Navbar() {
 					</a>
 				</li>
 			</ul>
+
+			<ul className={styles.navContacts}>
+				<li>
+					<a href='tel:+48000000000' className={styles.link}>
+						+48 000 000 000
+					</a>
+				</li>
+				<li>
+					<a href='mailto:email@gmail.com' className={styles.link}>
+						email@gmail.com
+					</a>
+				</li>
+			</ul>
+
+			<div className={styles.mobileMenu}>
+				<BurgerMenu />
+			</div>
 		</nav>
 	)
 }
