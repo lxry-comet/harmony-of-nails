@@ -3,13 +3,13 @@
 	flex-direction: column;
 	align-items: center;
 	margin: 0 auto;
-	padding: 60px 40px;
+	padding: 60px 24px;
 	text-align: center;
 	font-family: sans-serif;
 	color: #111827;
 }
 .title {
-	font-size: 32px;
+	font-size: clamp(24px, 4vw, 32px);
 	font-weight: 700;
 	margin-bottom: 15px;
 }
@@ -17,6 +17,8 @@
 	font-size: 15px;
 	color: #666;
 	margin-bottom: 50px;
+	max-width: 720px;
+	line-height: 1.6;
 }
 .flex {
 	display: flex;
@@ -78,6 +80,7 @@
 	border-radius: 12px;
 	height: max-content;
 	box-sizing: border-box;
+	background: rgba(255, 255, 255, 0.95);
 }
 
 .groupContainer {
@@ -127,4 +130,62 @@
 	color: #666;
 	margin-left: 8px;
 	font-size: 13px;
+}
+
+@media (max-width: 1024px) {
+	.section {
+		padding: 56px 18px 40px;
+	}
+
+	.groupContainer {
+		grid-template-columns: 1fr;
+		gap: 16px;
+	}
+
+	.spanningGroup {
+		grid-column: auto;
+		grid-row: auto;
+	}
+
+	.group {
+		max-width: none;
+	}
+
+	.groupTitle {
+		font-size: 22px;
+		margin: 20px 0 12px;
+	}
+}
+
+@media (max-width: 640px) {
+	.section {
+		padding: 48px 14px 32px;
+	}
+
+	.subtitle {
+		margin-bottom: 28px;
+		font-size: 14px;
+	}
+
+	.group {
+		border-radius: 10px;
+	}
+
+	.groupTitle {
+		font-size: 20px;
+	}
+
+	.list {
+		margin: 8px 0 16px 12px;
+	}
+
+	.variantName {
+		font-size: 13px;
+	}
+
+	.variantMeta {
+		display: block;
+		margin-left: 0;
+		margin-top: 4px;
+	}
 }

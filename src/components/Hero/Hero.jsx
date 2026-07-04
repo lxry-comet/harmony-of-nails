@@ -1,5 +1,4 @@
 import styles from './Hero.module.css'
-
 export default function Hero() {
 	const categories = [
 		'Manicure',

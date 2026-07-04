@@ -4,6 +4,8 @@
 
 .button {
 	display: none;
+	flex-direction: column;
+	gap: 5px;
 	align-items: center;
 	justify-content: center;
 	width: 44px;
@@ -14,6 +16,15 @@
 	cursor: pointer;
 	z-index: 1001;
 	color: var(--text-h);
+	font-size: 22px;
+	line-height: 1;
+}
+
+.button svg {
+	display: block;
+	width: 1em;
+	height: 1em;
+	color: inherit;
 }
 
 .button span {
@@ -39,17 +50,6 @@
 	transform: translateY(-6px) rotate(-45deg);
 }
 
-.button span {
-	display: block;
-	height: 2px;
-	width: 100%;
-	background-color: var(--text-h);
-	border-radius: 2px;
-	transition:
-		transform 0.25s ease,
-		opacity 0.25s ease;
-}
-
 .button.open {
 	color: var(--text-h);
 }
@@ -64,6 +64,7 @@
 		opacity 0.25s ease,
 		visibility 0.25s ease;
 	z-index: 999;
+	backdrop-filter: blur(2px);
 }
 
 .overlay.visible {
@@ -75,9 +76,9 @@
 	position: fixed;
 	top: 0;
 	right: 0;
-	height: 100vh;
+	height: 100dvh;
 	width: min(85vw, 320px);
-	padding: 90px 24px 24px;
+	padding: 20px 24px 24px;
 	background: var(--code-bg);
 	box-shadow: -8px 0 24px rgba(0, 0, 0, 0.12);
 	transform: translateX(100%);
@@ -92,9 +93,48 @@
 	transform: translateX(0);
 }
 
-.nav {
+.menuHeader {
 	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 4px 0 16px;
+	padding-left: 4px;
+	border-bottom: 1px solid rgba(8, 6, 13, 0.12);
+}
+
+.menuTitle {
+	font-size: 18px;
+	font-weight: 700;
+	color: var(--text-h);
+	font-family: 'Inter', 'Segoe UI', sans-serif;
+	padding-left: 4px;
+	padding-right: 12px;
+	line-height: 1.2;
+	word-break: break-word;
+}
+
+.menuCloseButton {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 44px;
+	height: 44px;
+	padding: 0;
+	border: 0;
+	background: transparent;
+	cursor: pointer;
+	color: var(--text-h);
+}
+
+.menuBody {
+	display: flex;
+	flex: 1;
 	flex-direction: column;
+	gap: 24px;
+}
+
+.nav {
+	display: grid;
 	gap: 16px;
 }
 
@@ -107,11 +147,10 @@
 }
 
 .contacts {
-	display: flex;
-	flex-direction: column;
+	display: grid;
 	gap: 10px;
 	padding-top: 8px;
-	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	border-top: 1px solid rgba(0, 0, 0, 0.12);
 }
 
 .contactLink {
@@ -121,12 +160,81 @@
 }
 
 .contactLink svg {
+	display: block;
+	width: 18px;
+	height: 18px;
 	flex-shrink: 0;
+	color: inherit;
+}
+
+.nav a,
+.contactLink {
+	font-weight: 400;
+	font-variation-settings: 'wght' 400;
+	cursor: pointer;
+	display: inline-block;
+	transition:
+		font-variation-settings 0.3s ease-in-out,
+		transform 0.2s ease;
+}
+
+.nav a:hover,
+.contactLink:hover {
+	font-weight: 700;
+	font-variation-settings: 'wght' 700;
+	transform: translateY(-1px);
 }
 
 @media (max-width: 1024px) {
 	.button {
 		display: flex;
+	}
+
+	.menu {
+		width: 100vw;
+		max-width: none;
+		padding: 18px 20px 24px;
+		transform: translateX(100%);
+	}
+
+	.menu.open {
+		transform: translateX(0);
+	}
+
+	.menuHeader {
+		padding-bottom: 18px;
+	}
+
+	.menuTitle {
+		padding-left: 45px;
+		font-size: 20px;
+	}
+
+	.menuBody {
+		justify-content: center;
+		padding-top: 8px;
+	}
+
+	.nav {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: center;
+		gap: 16px 20px;
+	}
+
+	.contacts {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: center;
+		gap: 12px 20px;
+		padding-top: 12px;
+	}
+
+	.nav a,
+	.contacts a {
+		font-size: 18px;
 	}
 
 	.navLinks,

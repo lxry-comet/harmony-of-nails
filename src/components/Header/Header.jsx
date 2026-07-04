@@ -1,5 +1,6 @@
 import BurgerMenu from '../BurgerMenu/BurgerMenu'
 import styles from './Header.module.css'
+import { FiMail, FiPhone } from 'react-icons/fi'
 
 export default function Navbar() {
 	return (
@@ -39,11 +40,13 @@ export default function Navbar() {
 
 			<ul className={styles.navContacts}>
 				<li>
+					<FiPhone className={styles.icon} />
 					<a href='tel:+48000000000' className={styles.link}>
 						+48 000 000 000
 					</a>
 				</li>
 				<li>
+					<FiMail className={styles.icon} />
 					<a href='mailto:email@gmail.com' className={styles.link}>
 						email@gmail.com
 					</a>

@@ -58,6 +58,12 @@ body {
 	background-color: var(--bg);
 }
 
+body.no-scroll {
+	overflow: hidden;
+	position: fixed;
+	width: 100%;
+}
+
 #root {
 	/* width: 1126px; */
 	max-width: 100%;
