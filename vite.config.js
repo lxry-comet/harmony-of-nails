@@ -5,6 +5,7 @@ import injectHTML from 'vite-plugin-html-inject'
 export default defineConfig({
 	base: '/harmony-of-nails/',
 	root: 'src',
+	publicDir: '../public',
 	server: {
 		hmr: {
 			overlay: false

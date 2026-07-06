@@ -7,7 +7,7 @@ const brandTitle = 'Harmony of Nails'
 
 const links = [
 	{ href: '/uslugi', label: 'Usługi', route: true },
-	{ href: '#portfolio', label: 'Portfolio' },
+	{ href: '/portfolio', label: 'Portfolio', route: true },
 	{ href: '#opinie', label: 'Opinie' },
 	{ href: '#cennik', label: 'Cennik' },
 	{ href: '#kontakt', label: 'Kontakt' }

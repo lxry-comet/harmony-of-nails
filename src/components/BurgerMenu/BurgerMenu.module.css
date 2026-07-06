@@ -1,6 +1,7 @@
 .wrapper {
 	position: relative;
 	margin-left: 25px;
+	margin-right: 8px;
 }
 
 .button {
@@ -234,7 +235,7 @@
 
 		/* margin: 0 auto; */
 		/* align-items: start; */
-		
+
 		gap: 12px 20px;
 		padding-top: 12px;
 	}

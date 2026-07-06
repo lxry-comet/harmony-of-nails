@@ -24,9 +24,9 @@ export default function Navbar() {
 					</Link>
 				</li>
 				<li>
-					<a href='#portfolio' className={styles.link}>
+					<Link to='/portfolio' className={styles.link}>
 						Portfolio
-					</a>
+					</Link>
 				</li>
 				<li>
 					<a href='#opinie' className={styles.link}>
