@@ -7,7 +7,7 @@ export default function Navbar() {
 	return (
 		<nav className={styles.navbar}>
 			<div className={styles.logoContainer}>
-				<div className={styles.logoCircle}></div>
+				{/* <div className={styles.logoCircle}></div> */}
 				<span className={styles.logoText}>Harmony of Nails</span>
 			</div>
 
@@ -47,14 +47,14 @@ export default function Navbar() {
 			<ul className={styles.navContacts}>
 				<li>
 					<FiPhone className={styles.icon} />
-					<a href='tel:+48000000000' className={styles.link}>
-						+48 000 000 000
+					<a href='tel:+48793965530' className={styles.link}>
+						+48 793 965 530
 					</a>
 				</li>
 				<li>
 					<FiMail className={styles.icon} />
-					<a href='mailto:email@gmail.com' className={styles.link}>
-						email@gmail.com
+					<a href='mailto:biuro.harmonyofbeauty@gmail.com' className={styles.link}>
+						biuro.harmonyofbeauty@gmail.com
 					</a>
 				</li>
 			</ul>
