@@ -134,12 +134,14 @@
 
 @media (max-width: 1024px) {
 	.section {
-		padding: 56px 18px 40px;
+		padding: 100px 18px 40px;
 	}
 
 	.groupContainer {
 		grid-template-columns: 1fr;
 		gap: 16px;
+		align-items: center;
+		justify-content: center;
 	}
 
 	.spanningGroup {
@@ -159,7 +161,7 @@
 
 @media (max-width: 640px) {
 	.section {
-		padding: 48px 14px 32px;
+		padding: 100px 14px 32px;
 	}
 
 	.subtitle {
@@ -167,8 +169,14 @@
 		font-size: 14px;
 	}
 
+	.groupContainer {
+		align-items: center;
+		justify-content: center;
+	}
+
 	.group {
 		border-radius: 10px;
+		text-align: center;
 	}
 
 	.groupTitle {
@@ -176,7 +184,7 @@
 	}
 
 	.list {
-		margin: 8px 0 16px 12px;
+		margin: 8px auto 16px;
 	}
 
 	.variantName {

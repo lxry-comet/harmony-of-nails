@@ -8,9 +8,10 @@ export default function Navbar() {
 		<nav className={styles.navbar}>
 			<div className={styles.logoContainer}>
 				{/* <div className={styles.logoCircle}></div> */}
-				<span className={styles.logoText}>Harmony of Nails</span>
+				<Link to='/' className={styles.logoText}>
+					Harmony of Nails
+				</Link>
 			</div>
-
 			<ul className={styles.navLinks}>
 				<li>
 					<Link to='/' className={styles.link}>
@@ -53,7 +54,10 @@ export default function Navbar() {
 				</li>
 				<li>
 					<FiMail className={styles.icon} />
-					<a href='mailto:biuro.harmonyofbeauty@gmail.com' className={styles.link}>
+					<a
+						href='mailto:biuro.harmonyofbeauty@gmail.com'
+						className={styles.link}
+					>
 						biuro.harmonyofbeauty@gmail.com
 					</a>
 				</li>

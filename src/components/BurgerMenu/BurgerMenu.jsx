@@ -1,11 +1,12 @@
 import { useEffect, useState } from 'react'
 import { FiMail, FiPhone, FiX } from 'react-icons/fi'
+import { Link } from 'react-router-dom'
+import headerCss from '../Header/Header.module.css'
 import styles from './BurgerMenu.module.css'
-
 const brandTitle = 'Harmony of Nails'
 
 const links = [
-	{ href: '#uslugi', label: 'Usługi' },
+	{ href: '/uslugi', label: 'Usługi', route: true },
 	{ href: '#portfolio', label: 'Portfolio' },
 	{ href: '#opinie', label: 'Opinie' },
 	{ href: '#cennik', label: 'Cennik' },
@@ -67,7 +68,9 @@ export default function BurgerMenu() {
 				aria-label='Menu nawigacji'
 			>
 				<div className={styles.menuHeader}>
-					<span className={styles.menuTitle}>{brandTitle}</span>
+					<Link to='/' className={styles.menuTitle} onClick={closeMenu}>
+						{brandTitle}
+					</Link>
 					<button
 						type='button'
 						className={styles.menuCloseButton}
@@ -80,30 +83,35 @@ export default function BurgerMenu() {
 
 				<div className={styles.menuBody}>
 					<nav className={styles.nav}>
-						{links.map(link => (
-							<a key={link.href} href={link.href} onClick={closeMenu}>
-								{link.label}
-							</a>
-						))}
+						{links.map(link =>
+							link.route ? (
+								<Link key={link.href} to={link.href} onClick={closeMenu}>
+									{link.label}
+								</Link>
+							) : (
+								<a key={link.href} href={link.href} onClick={closeMenu}>
+									{link.label}
+								</a>
+							)
+						)}
 					</nav>
 
 					<div className={styles.contacts}>
-						<a
-							href='tel:+48000000000'
-							onClick={closeMenu}
-							className={styles.contactLink}
-						>
-							<FiPhone />
-							<span>+48 000 000 000</span>
-						</a>
-						<a
-							href='mailto:email@gmail.com'
-							onClick={closeMenu}
-							className={styles.contactLink}
-						>
-							<FiMail />
-							<span>email@gmail.com</span>
-						</a>
+						<div>
+							<FiPhone className={headerCss.icon} />
+							<a href='tel:+48793965530' className={headerCss.link}>
+								+48 793 965 530
+							</a>
+						</div>
+						<div>
+							<FiMail className={headerCss.icon} />
+							<a
+								href='mailto:biuro.harmonyofbeauty@gmail.com'
+								className={headerCss.link}
+							>
+								biuro.harmonyofbeauty@gmail.com
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
