@@ -105,11 +105,6 @@
 		align-items: stretch;
 		gap: 12px;
 	}
-
-	.btnOutline,
-	.btnFilled {
-		width: 100%;
-	}
 }
 a{
 	text-decoration: none;
