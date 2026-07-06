@@ -1,6 +1,7 @@
+import { FiMail, FiPhone } from 'react-icons/fi'
+import { Link } from 'react-router-dom'
 import BurgerMenu from '../BurgerMenu/BurgerMenu'
 import styles from './Header.module.css'
-import { FiMail, FiPhone } from 'react-icons/fi'
 
 export default function Navbar() {
 	return (
@@ -12,9 +13,14 @@ export default function Navbar() {
 
 			<ul className={styles.navLinks}>
 				<li>
-					<a href='#uslugi' className={styles.link}>
+					<Link to='/' className={styles.link}>
+						Strona główna
+					</Link>
+				</li>
+				<li>
+					<Link to='/uslugi' className={styles.link}>
 						Usługi
-					</a>
+					</Link>
 				</li>
 				<li>
 					<a href='#portfolio' className={styles.link}>

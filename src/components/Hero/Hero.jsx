@@ -1,4 +1,9 @@
+import { Link } from 'react-router-dom'
 import styles from './Hero.module.css'
+
+const BOOKSY_URL =
+	'https://booksy.com/pl-pl/215674_harmony-of-beauty_paznokcie_19380_swinoujscie?utm_medium=profile_share_from_profile'
+
 export default function Hero() {
 	const categories = [
 		'Manicure',
@@ -17,8 +22,17 @@ export default function Hero() {
 					perfekcyjne wykończenie.
 				</p>
 				<div className={styles.buttons}>
-					<button className={styles.btnOutline}>Zobacz usługi</button>
-					<button className={styles.btnFilled}>Umów wizytę</button>
+					<Link to='/uslugi' className={styles.btnOutline}>
+						Zobacz usługi
+					</Link>
+					<a
+						href={BOOKSY_URL}
+						target='_blank'
+						rel='noopener noreferrer'
+						className={styles.btnFilled}
+					>
+						Umów wizytę
+					</a>
 				</div>
 			</div>
 		</section>

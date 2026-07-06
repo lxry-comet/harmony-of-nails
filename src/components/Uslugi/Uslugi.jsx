@@ -10,7 +10,7 @@ export default function Uslugi() {
 	})
 
 	return (
-		<section className={styles.section} id='uslugi'>
+		<section className={styles.section} id='cennik'>
 			<h2 className={styles.title}>NASZA OFERTA</h2>
 			<p className={styles.subtitle}>
 				Wybierz to, czego potrzebujesz — od klasycznego manicure po kompleksowe

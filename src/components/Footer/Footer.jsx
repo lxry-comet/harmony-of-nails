@@ -4,8 +4,8 @@ export default function Footer() {
 	return (
 		<footer className={styles.footer}>
 			<div className={styles.topRow}>
-				<span>© 2026 Harmony of Nails. Wszystkie prawa zastrzeżone.</span>
 				<span>Godziny: Pon–Sob 10:00–19:00</span>
+				<span>Kontakt: hello@harmonyofnails.com • +48 600 123 456</span>
 				<span>
 					Lokalizacja: Centrum miasta (
 					<a href='#mapa' className={styles.link}>
@@ -15,8 +15,10 @@ export default function Footer() {
 				</span>
 			</div>
 			<div className={styles.bottomRow}>
-				<span>Kontakt: hello@harmonyofnails.com • +48 600 123 456</span>
+				<span>© 2026 Harmony of Nails. Wszystkie prawa zastrzeżone.</span>
+
 			</div>
+			
 		</footer>
 	)
 }
