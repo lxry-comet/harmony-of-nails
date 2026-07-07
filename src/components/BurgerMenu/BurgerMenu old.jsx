@@ -8,9 +8,9 @@ const brandTitle = 'Harmony of Nails'
 const links = [
 	{ href: '/uslugi', label: 'Usługi', route: true },
 	{ href: '/portfolio', label: 'Portfolio', route: true },
-	
-	{ href: '/salony', label: 'Salony', route: true  },
-	{ href: '/kontakt', label: 'Kontakt', route: true  }
+	{ href: '#opinie', label: 'Opinie' },
+	{ href: '#cennik', label: 'Cennik' },
+	{ href: '#kontakt', label: 'Kontakt' }
 ]
 
 export default function BurgerMenu() {

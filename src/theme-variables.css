@@ -1,0 +1,64 @@
+/*
+  Zaimportuj ten plik RAZ, globalnie — np. w src/main.jsx:
+  import './theme-variables.css'
+  (albo wklej zawartość na górę swojego istniejącego index.css)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root {
+	--text: #6b6375;
+	--text-h: #08060d;
+	--bg: #f9feff;
+	--border: #38bdf8;
+	--code-bg: #f9feff;
+
+	/* odcienie wyprowadzone z --border, ta sama rodzina błękitu */
+	--border-tint: #bae6fd;
+	--border-deep: #0284c7;
+	--border-navy: #0c4a6e;
+	--line: rgba(8, 6, 13, 0.1);
+	--radius: 2px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	background: var(--bg);
+	color: var(--text);
+	font-family: 'Manrope', sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+	font-family: 'Fraunces', serif;
+	font-weight: 500;
+	letter-spacing: -0.01em;
+	color: var(--text-h);
+	margin: 0;
+}
+
+a {
+	color: inherit;
+}
+
+:focus-visible {
+	outline: 2px solid var(--border);
+	outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	* {
+		animation-duration: 0.001ms !important;
+		transition-duration: 0.001ms !important;
+	}
+}

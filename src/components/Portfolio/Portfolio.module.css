@@ -2,46 +2,54 @@
 	width: 100%;
 	margin: 0 auto;
 	text-align: center;
-	font-family: sans-serif;
-	padding: 100px 20px 72px;
+	font-family: 'Manrope', sans-serif;
+	background: var(--bg);
+	padding: 110px 32px 96px;
 	box-sizing: border-box;
 }
+
 .title {
-	font-size: clamp(24px, 4.2vw, 32px);
-	font-weight: 700;
+	font-family: 'Fraunces', serif;
+	font-style: italic;
+	font-weight: 500;
+	font-size: clamp(26px, 4.2vw, 38px);
 	margin-bottom: 12px;
-	color: #111827;
+	color: var(--text-h);
 }
+
 .subtitle {
 	font-size: 15px;
-	color: #555;
-	margin-bottom: 36px;
+	color: var(--text);
+	margin-bottom: 44px;
 	line-height: 1.6;
 	max-width: 760px;
 	margin-inline: auto;
 }
+
 .groups {
 	display: flex;
 	flex-direction: column;
-	gap: 28px;
+	gap: 14px;
 	margin: 0 auto;
 	text-align: left;
 	width: 100%;
 	max-width: 1100px;
 }
+
 .group {
-	padding: 16px;
-	border: 1px solid #f0e7ef;
-	border-radius: 16px;
-	background: #fff;
-	box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+	padding: 26px 30px;
+	border: 1px solid var(--line);
+	background: var(--code-bg);
 }
+
 .groupTitle {
-	font-size: 20px;
-	font-weight: 700;
-	margin: 0 0 14px;
-	color: #111827;
+	font-family: 'Fraunces', serif;
+	font-size: 19px;
+	font-weight: 500;
+	margin: 0 0 16px;
+	color: var(--text-h);
 }
+
 .imageRow {
 	display: flex;
 	gap: 12px;
@@ -49,6 +57,7 @@
 	padding-bottom: 6px;
 	scrollbar-width: thin;
 }
+
 .imageButton {
 	border: none;
 	background: transparent;
@@ -56,18 +65,21 @@
 	cursor: zoom-in;
 	flex-shrink: 0;
 }
+
 .thumb {
 	width: min(220px, 70vw);
 	height: 160px;
 	object-fit: cover;
-	border-radius: 12px;
+	border-radius: var(--radius);
+	border: 1px solid var(--line);
 	display: block;
-	box-shadow: 0 8px 20px rgba(17, 24, 39, 0.14);
 	transition: transform 0.2s ease;
 }
+
 .imageButton:hover .thumb {
-	transform: scale(1.03);
+	transform: scale(1.02);
 }
+
 .lightbox {
 	position: fixed;
 	inset: 0;
@@ -75,41 +87,42 @@
 	align-items: center;
 	justify-content: center;
 	padding: 24px;
-	background: rgba(15, 23, 42, 0.82);
+	background: rgba(8, 6, 13, 0.82);
 	z-index: 1000;
 }
+
 .closeButton {
 	position: absolute;
 	top: 20px;
 	right: 20px;
-	border: none;
-	background: rgba(255, 255, 255, 0.92);
-	color: #111827;
+	border: 1px solid var(--border);
+	background: var(--bg);
+	color: var(--text-h);
 	width: 42px;
 	height: 42px;
 	border-radius: 50%;
-	font-size: 24px;
+	font-size: 22px;
 	cursor: pointer;
 }
+
 .lightboxImage {
 	max-width: min(92vw, 900px);
 	max-height: 86vh;
 	object-fit: contain;
-	border-radius: 16px;
-	box-shadow: 0 16px 40px rgba(0, 0, 0, 0.32);
+	border: 1px solid var(--border-tint);
 }
 
 @media (max-width: 640px) {
 	.section {
-		padding: 90px 14px 48px;
+		padding: 96px 16px 48px;
 	}
 
 	.group {
-		padding: 14px;
+		padding: 18px 16px;
 	}
 
 	.groupTitle {
-		font-size: 18px;
+		font-size: 17px;
 		margin-bottom: 10px;
 	}
 

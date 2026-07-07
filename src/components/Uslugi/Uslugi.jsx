@@ -1,13 +1,27 @@
+import { useMemo, useState } from 'react'
 import data from '../../json/uslugi.json'
 import styles from './Uslugi.module.css'
 
+const ALL_KEY = 'Wszystkie'
+
 export default function Uslugi() {
-	const groups = {}
-	data.forEach(s => {
-		const key = s.title || 'Inne'
-		if (!groups[key]) groups[key] = []
-		groups[key].push(s)
-	})
+	const groups = useMemo(() => {
+		const g = {}
+		data.forEach(s => {
+			const key = s.title || 'Inne'
+			if (!g[key]) g[key] = []
+			g[key].push(s)
+		})
+		return g
+	}, [])
+
+	const categories = useMemo(() => Object.keys(groups), [groups])
+	const [activeCategory, setActiveCategory] = useState(ALL_KEY)
+
+	const visibleGroups = useMemo(() => {
+		if (activeCategory === ALL_KEY) return Object.entries(groups)
+		return Object.entries(groups).filter(([key]) => key === activeCategory)
+	}, [groups, activeCategory])
 
 	return (
 		<section className={styles.section} id='cennik'>
@@ -17,8 +31,28 @@ export default function Uslugi() {
 				stylizacje.
 			</p>
 
+			<div className={styles.filters} role='tablist' aria-label='Filtruj usługi'>
+				<button
+					type='button'
+					className={`${styles.filterBtn} ${activeCategory === ALL_KEY ? styles.filterBtnActive : ''}`}
+					onClick={() => setActiveCategory(ALL_KEY)}
+				>
+					{ALL_KEY}
+				</button>
+				{categories.map(cat => (
+					<button
+						key={cat}
+						type='button'
+						className={`${styles.filterBtn} ${activeCategory === cat ? styles.filterBtnActive : ''}`}
+						onClick={() => setActiveCategory(cat)}
+					>
+						{cat}
+					</button>
+				))}
+			</div>
+
 			<div className={styles.groupContainer}>
-				{Object.entries(groups).map(([groupTitle, items], index) => (
+				{visibleGroups.map(([groupTitle, items], index) => (
 					<div
 						key={groupTitle}
 						className={`${styles.group} ${index === 4 ? styles.spanningGroup : ''}`}

@@ -5,18 +5,14 @@ const BOOKSY_URL =
 	'https://booksy.com/pl-pl/215674_harmony-of-beauty_paznokcie_19380_swinoujscie?utm_medium=profile_share_from_profile'
 
 export default function Hero() {
-	const categories = [
-		'Manicure',
-		'Pedicure',
-		'Depilacja',
-		'Stylizacja brwi',
-		'Stylizacja rzęs'
-	]
 	return (
 		<section className={styles.hero}>
 			<div className={styles.overlay} />
 			<div className={styles.content}>
-				<h1 className={styles.title}>Harmony of Nails</h1>
+				<p className={styles.eyebrow}>Świnoujście · Studio urody</p>
+				<h1 className={styles.title}>
+					Harmony <em>of Nails</em>
+				</h1>
 				<p className={styles.description}>
 					Manicure, pedicure oraz stylizacje — dbamy o komfort, czystość i
 					perfekcyjne wykończenie.

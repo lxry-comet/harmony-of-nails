@@ -34,7 +34,7 @@
 	height: 2px;
 	width: 100%;
 	background-color: var(--text-h);
-	border-radius: 2px;
+	border-radius: 1px;
 	transition:
 		transform 0.25s ease,
 		opacity 0.25s ease;
@@ -53,13 +53,13 @@
 }
 
 .button.open {
-	color: var(--text-h);
+	color: var(--border-deep);
 }
 
 .overlay {
 	position: fixed;
 	inset: 0;
-	background: rgba(0, 0, 0, 0.25);
+	background: rgba(8, 6, 13, 0.35);
 	opacity: 0;
 	visibility: hidden;
 	transition:
@@ -73,6 +73,7 @@
 	opacity: 1;
 	visibility: visible;
 }
+
 .menu {
 	position: fixed;
 	top: 0;
@@ -82,7 +83,7 @@
 	padding: 20px 24px 24px;
 	box-sizing: border-box;
 	background: var(--code-bg);
-	box-shadow: -8px 0 24px rgba(0, 0, 0, 0.12);
+	box-shadow: -8px 0 24px rgba(8, 6, 13, 0.12);
 	transform: translateX(100%);
 	transition: transform 0.25s ease;
 	z-index: 1000;
@@ -101,14 +102,15 @@
 	justify-content: space-between;
 	padding: 4px 0 16px;
 	padding-left: 4px;
-	border-bottom: 1px solid rgba(8, 6, 13, 0.12);
+	border-bottom: 1px solid var(--line);
 }
 
 .menuTitle {
+	font-family: 'Fraunces', serif;
+	font-style: italic;
 	font-size: 18px;
-	font-weight: 700;
+	font-weight: 500;
 	color: var(--text-h);
-	font-family: 'Inter', 'Segoe UI', sans-serif;
 	padding-left: 4px;
 	padding-right: 12px;
 	line-height: 1.2;
@@ -144,15 +146,26 @@
 .contacts a {
 	text-decoration: none;
 	color: var(--text-h);
+	font-family: 'Manrope', sans-serif;
 	font-size: 16px;
-	font-weight: 500;
+	font-weight: 600;
+	transition:
+		color 0.2s ease,
+		transform 0.2s ease;
+	display: inline-block;
+}
+
+.nav a:hover,
+.contactLink:hover {
+	color: var(--border-deep);
+	transform: translateY(-1px);
 }
 
 .contacts {
 	display: grid;
 	gap: 10px;
 	padding-top: 8px;
-	border-top: 1px solid rgba(0, 0, 0, 0.12);
+	border-top: 1px solid var(--line);
 }
 
 .contactLink {
@@ -166,25 +179,7 @@
 	width: 18px;
 	height: 18px;
 	flex-shrink: 0;
-	color: inherit;
-}
-
-.nav a,
-.contactLink {
-	font-weight: 400;
-	font-variation-settings: 'wght' 400;
-	cursor: pointer;
-	display: inline-block;
-	transition:
-		font-variation-settings 0.3s ease-in-out,
-		transform 0.2s ease;
-}
-
-.nav a:hover,
-.contactLink:hover {
-	font-weight: 700;
-	font-variation-settings: 'wght' 700;
-	transform: translateY(-1px);
+	color: var(--border-deep);
 }
 
 @media (max-width: 1024px) {
@@ -215,7 +210,6 @@
 	}
 
 	.menuBody {
-		/* justify-content: center; */
 		padding-top: 8px;
 	}
 
@@ -232,10 +226,6 @@
 		flex-wrap: wrap;
 		flex-direction: column;
 		justify-content: center;
-
-		/* margin: 0 auto; */
-		/* align-items: start; */
-
 		gap: 12px 20px;
 		padding-top: 12px;
 	}

@@ -28,20 +28,20 @@ export default function Navbar() {
 						Portfolio
 					</Link>
 				</li>
-				{/* <li>
+				<li>
 					<a href='#opinie' className={styles.link}>
 						Opinie
 					</a>
-				</li> */}
-				<li>
-					<Link to='/salony' className={styles.link}>
-						Salony
-					</Link>
 				</li>
 				<li>
-					<Link to='/kontakt' className={styles.link}>
+					<a href='#cennik' className={styles.link}>
+						Cennik
+					</a>
+				</li>
+				<li>
+					<a href='#kontakt' className={styles.link}>
 						Kontakt
-					</Link>
+					</a>
 				</li>
 			</ul>
 
