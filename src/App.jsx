@@ -14,7 +14,7 @@ function HomePage() {
 			<Hero />
 			<Uslugi />
 			<Portfolio />
-			<Opinie />
+			{/* <Opinie /> */}
 			<Salony />
 			<Kontakt />
 		</>

@@ -58,6 +58,7 @@ export default function Opinie() {
 							{s.label}
 						</button>
 					))}
+					
 				</div>
 			) : null}
 

@@ -83,6 +83,19 @@ body.no-scroll {
 	box-sizing: border-box;
 }
 
+p, div, span {
+  /* Запрещаем выделение текста для всех основных браузеров */
+  -webkit-user-select: none; /* Safari, iOS, Android */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* Старые версии IE/Edge */
+  user-select: none;         /* Стандартный синтаксис */
+
+  /* Убираем синий/серый фон при тапе на iOS и Android */
+  -webkit-tap-highlight-color: transparent; 
+
+  /* Устанавливаем стандартный курсор стрелочки вместо текстового (I-beam) */
+  cursor: default; 
+}
 h1,
 h2 {
 	font-family: var(--heading);
