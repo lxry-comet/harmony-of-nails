@@ -1,11 +1,11 @@
+import { Link } from 'react-router-dom'
 import { FiClock, FiMail, FiMapPin, FiPhone } from 'react-icons/fi'
 import styles from './Kontakt.module.css'
 
-// TODO: podmień na prawdziwy adres / link do mapy, jeśli chcesz osadzić konkretną lokalizację.
 const MAP_EMBED_SRC =
 	'https://www.google.com/maps?q=Świnoujście&output=embed'
-const BOOKING_URL =
-	'https://booksy.com/pl-pl/215674_harmony-of-beauty_paznokcie_19380_swinoujscie'
+// const BOOKING_URL =
+// 	'https://booksy.com/pl-pl/215674_harmony-of-beauty_paznokcie_19380_swinoujscie'
 
 export default function Kontakt() {
 	return (
@@ -73,14 +73,14 @@ export default function Kontakt() {
 						</div>
 					</div>
 
-					<a
-						href={BOOKING_URL}
-						target='_blank'
+					<Link
+						to="/salony"
+						// target='_blank'
 						rel='noopener noreferrer'
 						className={styles.btnPrimary}
 					>
 						Umów wizytę przez Booksy
-					</a>
+					</Link>
 				</div>
 
 				<div className={styles.mapCard}>
