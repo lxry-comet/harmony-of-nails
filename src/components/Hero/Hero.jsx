@@ -11,7 +11,7 @@ export default function Hero() {
 			<div className={styles.content}>
 				<p className={styles.eyebrow}>Świnoujście · Studio urody</p>
 				<h1 className={styles.title}>
-					Harmony <em>of Nails</em>
+					Harmony <em>of Beauty</em>
 				</h1>
 				<p className={styles.description}>
 					Manicure, pedicure oraz stylizacje — dbamy o komfort, czystość i

@@ -2,20 +2,15 @@ export const salons = [
 	{
 		id: 'centrum',
 		tag: 'Salon 1',
-		name: 'Harmony of Nails',
+		name: 'Harmony of Beauty',
 		district: 'Ścisłe centrum Świnoujścia',
-		address: 'ul. Piłsudskiego 12, 72-600 Świnoujście',
-		phone: '+48 793 965 530',
-		phoneHref: 'tel:+48793965530',
-		email: 'biuro.harmonyofbeauty@gmail.com',
+		address: 'ul. Józefa Bema 3/2, 72-600 Świnoujście',
+		phone: '+48 733 546 506',
+		phoneHref: 'tel:+48733546506',
+		email: 'Ekaterina.Sopchuk@gmail.com',
 		hours: [
-			{ day: 'Pon', time: '9:00 – 18:00' },
-			{ day: 'Wt', time: '9:00 – 18:00' },
-			{ day: 'Śr', time: '9:00 – 18:00' },
-			{ day: 'Czw', time: '9:00 – 18:00' },
-			{ day: 'Pt', time: '9:00 – 18:00' },
-			{ day: 'Sob', time: '9:00 – 16:00' },
-			{ day: 'Nd', time: 'zamknięte' }
+			{ day: 'Pon-Pt', time: '10:00 – 16:00' },
+			{ day: 'Sob-Nd', time: 'zamknięte' }
 		],
 		mapUrl: 'https://www.google.com/maps?cid=15046654302001010948',
 		bookingUrl:
@@ -29,15 +24,10 @@ export const salons = [
 		address: 'ul. Grunwaldzka 98D, 72-600 Świnoujście',
 		phone: '+48 733 546 506',
 		phoneHref: 'tel:+48733546506',
-		email: 'katrina91@op.pl',
+		email: 'Ekaterina.Sopchuk@gmail.com',
 		hours: [
-			{ day: 'Pon', time: '12:00 – 19:30' },
-			{ day: 'Wt', time: '9:30 – 15:30' },
-			{ day: 'Śr', time: '11:00 – 15:00' },
-			{ day: 'Czw', time: '9:00 – 16:40' },
-			{ day: 'Pt', time: '12:00 – 19:30' },
-			{ day: 'Sob', time: 'zamknięte' },
-			{ day: 'Nd', time: 'zamknięte' }
+			{ day: 'Pon-pt', time: '10:00 – 16:00' },
+			{ day: 'Sob-Nd', time: 'zamknięte' }
 		],
 		mapUrl: 'https://www.google.com/maps?cid=9918592233162082713',
 		bookingUrl:

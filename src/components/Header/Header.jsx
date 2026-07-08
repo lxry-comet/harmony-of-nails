@@ -7,7 +7,7 @@ export default function Navbar() {
 		<nav className={styles.navbar}>
 			<div className={styles.logoContainer}>
 				<Link to='/' className={styles.logoText}>
-					Harmony of Nails
+					Harmony of Beauty
 				</Link>
 			</div>
 			<ul className={styles.navLinks}>

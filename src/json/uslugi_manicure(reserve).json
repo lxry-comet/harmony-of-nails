@@ -1,0 +1,144 @@
+[
+	  {
+    "salon": "Salon 1",
+    "id": "Manicure01",
+    "icon": "💅",
+    "title": "Manicure",
+    "subtitle": "Przedłużanie żelem na formie",
+    "description": "Usługa zawiera opracowanie najnaturalnej płytki paznokcia oraz skórek, przedłużenie paznokci na formach dolnych, nałożenie koloru. Sciągnięcie starej masy żelowej lub hybrydowej nie jest zawarte w cenie.",
+    "variants": [
+      {
+        "numOfVariants": "Wariant 1",
+        "name": "Przedłużanie 1 Kolor - Ewelina",
+        "price": "210 zł",
+        "time": "2g 30min"
+      },
+      {
+        "numOfVariants": "Wariant 2",
+        "name": "Przedłużanie Żelem + zrobienia - Ewelina",
+        "price": "230 zł",
+        "time": "2g 45min"
+      },
+      {
+        "numOfVariants": "Wariant 3",
+        "name": "Przedłużanie Żelem 1 Kolor - Klaudia",
+        "price": "200 zł",
+        "time": "4g 30min"
+      },
+            {
+        "numOfVariants": "Wariant 4",
+        "name": "Przedłużanie Żelem + zrobienia - Klaudia",
+        "price": "210 zł",
+        "time": "5g"
+      }
+    ]
+  },
+  {
+    "salon": "Salon 1",
+    "id": "Manicure02",
+    "icon": "💅",
+    "title": "Manicure",
+    "subtitle": "Odnowa żelowa",
+    "description": "Usługa zawiera opracowanie najnaturalnej płytki paznokcia oraz skórek, przedłużenie paznokci na formach dolnych, nałożenie koloru. Sciągnięcie starej masy żelowej lub hybrydowej nie jest zawarte w cenie.",
+    "variants": [
+      {
+        "numOfVariants": "Wariant 1",
+        "name": "Odnowa Żelowa 1 Kolor - Ewelina",
+        "price": "170 zł",
+        "time": "2g "
+      },
+      {
+        "numOfVariants": "Wariant 2",
+        "name": "Odnowa Żelowa 1 Kolor - Klaudia",
+        "price": "160 zł",
+        "time": "2g 30min"
+      },
+      {
+        "numOfVariants": "Wariant 3",
+        "name": "Odnowa Żelowa + Zrobienia - Ewelina",
+        "price": "190 zł",
+        "time": "2g 30min"
+      },
+      {
+        "numOfVariants": "Wariant 4",
+        "name": "Odnowa Żelowa + zrobienia - Klaudia",
+        "price": "180 zł",
+        "time": "3g"
+      },
+            {
+        "numOfVariants": "Wariant 5",
+        "name": "Korekta Żelowa - Klaudia",
+        "price": "190 zł",
+        "time": "4g"
+      }
+    ]
+  },
+  {
+    "salon": "Salon 1",
+    "id": "Manicure03",
+    "icon": "💅",
+    "title": "Manicure",
+    "subtitle": "Manicure hybrydowy",
+    "description": "Usługa zawiera opracowanie naturalnej płytki paznokcia oraz opracowanie skórek, nałożenie bazy hybrydowej oraz koloru. ściągnięcie poprzedniej masy hybrydowej wykonanej w naszym salonie zawarte jest w cenie usługi.",
+    "variants": [
+      {
+        "numOfVariants": "Wariant 1",
+        "name": "Manicure hybrydowy 1 Kolor - Ewelina",
+        "price": "160 zł",
+        "time": "1g 30min"
+      },
+      {
+        "numOfVariants": "Wariant 2",
+        "name": "Manicure Hybrydowy + French/Zdobienia Malowane - Ewelina",
+        "price": "170 zł",
+        "time": "1g 45min"
+      },
+      {
+        "numOfVariants": "Wariant 3",
+        "name": "Manicure Hybrydowy 1 Kolor - Klaudia",
+        "price": "150 zł",
+        "time": "2g"
+      },
+            {
+        "numOfVariants": "Wariant 4",
+        "name": "Manicure Hybrydowy + French/Babyboomer/Ombre - Klaudia",
+        "price": "160 zł",
+        "time": "2g 30min"
+      }
+    ]
+  },
+  {
+    "salon": "Salon 1",
+    "id": "Manicure04",
+    "icon": "💅",
+    "title": "Manicure",
+    "subtitle": "Zrobienie Paznokci",
+    "description": "Dodatkowe czasochłonne zdobienie. Jeżeli lubisz stylizace, gdzie każdy paznokiec wygląda inaczej, dodaj tąopcje usługi 😊",
+    "variants": [
+      {
+        "numOfVariants": "Wariant 1",
+        "name": "Manicure hybrydowy 1 Kolor - Ewelina",
+        "price": "160 zł",
+        "time": "1g 30min"
+      },
+      {
+        "numOfVariants": "Wariant 2",
+        "name": "Manicure Hybrydowy + French/Zdobienia Malowane - Ewelina",
+        "price": "170 zł",
+        "time": "1g 45min"
+      },
+      {
+        "numOfVariants": "Wariant 3",
+        "name": "Manicure Hybrydowy 1 Kolor - Klaudia",
+        "price": "150 zł",
+        "time": "2g"
+      },
+            {
+        "numOfVariants": "Wariant 4",
+        "name": "Manicure Hybrydowy + French/Babyboomer/Ombre - Klaudia",
+        "price": "160 zł",
+        "time": "2g 30min"
+      }
+    ]
+  }
+]
