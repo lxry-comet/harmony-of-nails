@@ -21,14 +21,17 @@ export default function Hero() {
 					<Link to='/uslugi' className={styles.btnOutline}>
 						Zobacz usługi
 					</Link>
-					<a
+					{/* <a
 						href={BOOKSY_URL}
 						target='_blank'
 						rel='noopener noreferrer'
 						className={styles.btnFilled}
 					>
 						Umów wizytę
-					</a>
+					</a> */}
+					<Link to='/salony' className={styles.btnFilled}>
+						Umów wizytę
+					</Link>
 				</div>
 			</div>
 		</section>

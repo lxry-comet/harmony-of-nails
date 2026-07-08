@@ -1,5 +1,6 @@
 [
   {
+    "salon": "Salon 1",
     "id": "pedicure",
     "icon": "🦶",
     "title": "Pedicure",
@@ -21,6 +22,7 @@
     ]
   },
   {
+    "salon": "Salon 1",
     "id": "Stylizacja brwi",
     "icon": "👁️",
     "title": "Stylizacja brwi",
@@ -54,6 +56,7 @@
     ]
   },
   {
+    "salon": "Salon 1",
     "id": "Depilacja",
     "icon": "🪒",
     "title": "Depilacja",
@@ -81,6 +84,7 @@
     ]
   },
   {
+    "salon": "Salon 1",
     "id": "Stylizacja rzęs",
     "icon": "👁️",
     "title": "Stylizacja rzęs",
@@ -132,6 +136,7 @@
     ]
   },
   {
+    "salon": "Salon 1",
     "id": "Manicure01",
     "icon": "💅",
     "title": "Manicure",
@@ -165,6 +170,7 @@
     ]
   },
   {
+    "salon": "Salon 1",
     "id": "Manicure02",
     "icon": "💅",
     "title": "Manicure",
@@ -204,6 +210,7 @@
     ]
   },
   {
+    "salon": "Salon 1",
     "id": "Manicure03",
     "icon": "💅",
     "title": "Manicure",
@@ -237,6 +244,41 @@
     ]
   },
   {
+    "salon": "Salon 1",
+    "id": "Manicure04",
+    "icon": "💅",
+    "title": "Manicure",
+    "subtitle": "Zrobienie Paznokci",
+    "description": "Dodatkowe czasochłonne zdobienie. Jeżeli lubisz stylizace, gdzie każdy paznokiec wygląda inaczej, dodaj tąopcje usługi 😊",
+    "variants": [
+      {
+        "numOfVariants": "Wariant 1",
+        "name": "Manicure hybrydowy 1 Kolor - Ewelina",
+        "price": "160 zł",
+        "time": "1g 30min"
+      },
+      {
+        "numOfVariants": "Wariant 2",
+        "name": "Manicure Hybrydowy + French/Zdobienia Malowane - Ewelina",
+        "price": "170 zł",
+        "time": "1g 45min"
+      },
+      {
+        "numOfVariants": "Wariant 3",
+        "name": "Manicure Hybrydowy 1 Kolor - Klaudia",
+        "price": "150 zł",
+        "time": "2g"
+      },
+            {
+        "numOfVariants": "Wariant 4",
+        "name": "Manicure Hybrydowy + French/Babyboomer/Ombre - Klaudia",
+        "price": "160 zł",
+        "time": "2g 30min"
+      }
+    ]
+  },
+    {
+    "salon": "Salon 2",
     "id": "Manicure04",
     "icon": "💅",
     "title": "Manicure",

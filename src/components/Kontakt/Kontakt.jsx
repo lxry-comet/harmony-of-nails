@@ -24,6 +24,9 @@ export default function Kontakt() {
 							<span className={styles.infoLabel}>Telefon</span>
 							<a href='tel:+48793965530' className={styles.infoValue}>
 								+48 793 965 530
+							</a><br />
+							<a href='tel:+48733546506' className={styles.infoValue}>
+								+48 733 546 506 
 							</a>
 						</div>
 					</div>
@@ -38,6 +41,12 @@ export default function Kontakt() {
 							>
 								biuro.harmonyofbeauty@gmail.com
 							</a>
+							<a
+								href='mailto:biuro.harmonyofbeauty@gmail.com'
+								className={styles.infoValue}
+							>
+								katrina91@op.pl
+							</a>
 						</div>
 					</div>
 
@@ -47,6 +56,7 @@ export default function Kontakt() {
 							<span className={styles.infoLabel}>Salony</span>
 							<span className={styles.infoValue}>
 								ul. Piłsudskiego 12 · ul. Nadmorska 8, Świnoujście
+								ul. Grunwaldzka 98D, 72-600, Świnoujście
 							</span>
 						</div>
 					</div>
