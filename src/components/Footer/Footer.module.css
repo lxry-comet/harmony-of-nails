@@ -15,36 +15,35 @@
 }
 
 .topRow {
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
-	gap: 24px;
-	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 40px;
 	width: 100%;
-	max-width: 1180px;
+	max-width: 900px;
 	padding-bottom: 24px;
 	border-bottom: 1px solid rgba(249, 254, 255, 0.12);
 }
 
-.topRowElements {
+.salonBlock {
 	display: flex;
 	flex-direction: column;
-	align-items: flex-start;
-	gap: 10px;
-}
-
-.topRowElements span {
-	display: inline-flex;
 	align-items: center;
 	gap: 8px;
 }
 
-.hours {
-	color: rgba(249, 254, 255, 0.7);
+.salonName {
+	font-family: 'Fraunces', serif;
+	font-style: italic;
+	font-size: 15px;
+	font-weight: 500;
+	color: #fff;
+	margin-bottom: 4px;
 }
 
-.location {
-	color: rgba(249, 254, 255, 0.7);
+.contactRow {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
 }
 
 .icon {
@@ -68,6 +67,34 @@
 	text-decoration: underline;
 }
 
+.hoursList {
+	margin-top: 8px;
+	display: grid;
+	gap: 2px;
+	font-size: 12.5px;
+	color: rgba(249, 254, 255, 0.55);
+	width: 100%;
+	max-width: 200px;
+}
+
+.hoursRow {
+	display: flex;
+	justify-content: space-between;
+	gap: 12px;
+}
+
+.mapLink {
+	color: var(--border-tint);
+	text-decoration: underline;
+	font-size: 13px;
+	font-weight: 600;
+	margin-top: 8px;
+}
+
+.mapLink:hover {
+	color: #fff;
+}
+
 .bottomRow {
 	font-weight: 600;
 	letter-spacing: 0.02em;
@@ -82,13 +109,8 @@
 	}
 
 	.topRow {
-		flex-direction: column;
-		align-items: center;
-		gap: 16px;
-	}
-
-	.topRowElements {
-		align-items: center;
+		grid-template-columns: 1fr;
+		gap: 28px;
 	}
 
 	.bottomRow {

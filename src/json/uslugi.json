@@ -277,37 +277,95 @@
       }
     ]
   },
-    {
+  {
     "salon": "Salon 2",
-    "id": "Manicure04",
-    "icon": "💅",
-    "title": "Manicure",
-    "subtitle": "Zrobienie Paznokci",
-    "description": "Dodatkowe czasochłonne zdobienie. Jeżeli lubisz stylizace, gdzie każdy paznokiec wygląda inaczej, dodaj tąopcje usługi 😊",
+    "id": "Uzupełnienie rzęs",
+    "icon": "",
+    "title": "Uzupełnienie rzęs",
+    "subtitle": "Uzupełnienie rzęs",
+    "description": "",
     "variants": [
       {
         "numOfVariants": "Wariant 1",
-        "name": "Manicure hybrydowy 1 Kolor - Ewelina",
-        "price": "160 zł",
-        "time": "1g 30min"
+        "name": "Uzupełnienie rzęs",
+        "price": "120 zł",
+        "time": "1g 25min"
+      }
+    ]
+  },
+  {
+    "salon": "Salon 2",
+    "id": "Pedicure",
+    "icon": "",
+    "title": "Uzupełnienie rzęs",
+    "subtitle": "Uzupełnienie rzęs",
+    "description": "",
+    "variants": [
+      {
+        "numOfVariants": "Wariant 1",
+        "name": "Wariant 1",
+        "price": "130 zł",
+        "time": "1g 25min"
       },
       {
         "numOfVariants": "Wariant 2",
-        "name": "Manicure Hybrydowy + French/Zdobienia Malowane - Ewelina",
-        "price": "170 zł",
-        "time": "1g 45min"
+        "name": "Pedicure hybrydowy z opracowaniem podeszwy stóp",
+        "price": "150 zł",
+        "time": "1g 25min"
+      }
+    ]
+  },
+  {
+    "salon": "Salon 2",
+    "id": "Połówka",
+    "icon": "",
+    "title": "Uzupełnienie",
+    "subtitle": "",
+    "description": "",
+    "variants": [
+      {
+        "numOfVariants": "Wariant 1",
+        "name": "Uzupełnienie",
+        "price": "70 zł",
+        "time": "40min"
       },
       {
-        "numOfVariants": "Wariant 3",
-        "name": "Manicure Hybrydowy 1 Kolor - Klaudia",
-        "price": "150 zł",
-        "time": "2g"
-      },
-            {
-        "numOfVariants": "Wariant 4",
-        "name": "Manicure Hybrydowy + French/Babyboomer/Ombre - Klaudia",
-        "price": "160 zł",
-        "time": "2g 30min"
+        "numOfVariants": "Wariant 2",
+        "name": "Uzupełnienie rzęs ''Połówka''",
+        "price": "90 zł",
+        "time": "50min"
+      }
+    ]
+  },
+  {
+    "salon": "Salon 2",
+    "id": "Stylizacja/Regulacja Brwi",
+    "icon": "",
+    "title": "Stylizacja/Regulacja Brwi",
+    "subtitle": "",
+    "description": "",
+    "variants": [
+      {
+        "numOfVariants": "Wariant 1",
+        "name": "Stylizacja/Regulacja Brwi",
+        "price": "30 zł",
+        "time": "30min"
+      }
+    ]
+  },
+  {
+    "salon": "Salon 2",
+    "id": "Henna rzęs",
+    "icon": "",
+    "title": "Henna rzęs",
+    "subtitle": "",
+    "description": "",
+    "variants": [
+      {
+        "numOfVariants": "Wariant 1",
+        "name": "Henna rzęs",
+        "price": "40 zł",
+        "time": "30min"
       }
     ]
   }

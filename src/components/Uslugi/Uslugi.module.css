@@ -27,6 +27,45 @@
 	line-height: 1.6;
 }
 
+.salonTabs {
+	display: flex;
+	gap: 6px;
+	margin-bottom: 28px;
+	padding: 5px;
+	border: 1px solid var(--line);
+	background: var(--code-bg);
+	border-radius: 999px;
+}
+
+.salonTabBtn {
+	background: transparent;
+	border: none;
+	color: var(--text);
+	font-family: 'Manrope', sans-serif;
+	font-size: 12.5px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	padding: 9px 22px;
+	border-radius: 999px;
+	cursor: pointer;
+	transition: background 0.2s ease, color 0.2s ease;
+	white-space: nowrap;
+}
+
+.salonTabBtn:hover {
+	color: var(--border-deep);
+}
+
+.salonTabBtnActive {
+	background: var(--border-deep);
+	color: #fff;
+}
+
+.salonTabBtnActive:hover {
+	color: #fff;
+}
+
 .filters {
 	display: flex;
 	flex-wrap: wrap;
@@ -164,6 +203,16 @@
 	.subtitle {
 		margin-bottom: 32px;
 		font-size: 14px;
+	}
+
+	.salonTabs {
+		width: 100%;
+		max-width: 320px;
+	}
+
+	.salonTabBtn {
+		flex: 1;
+		padding: 9px 12px;
 	}
 
 	.groupTitle {

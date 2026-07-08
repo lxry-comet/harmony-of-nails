@@ -1,4 +1,3 @@
-import { FiMail, FiPhone } from 'react-icons/fi'
 import { Link } from 'react-router-dom'
 import BurgerMenu from '../BurgerMenu/BurgerMenu'
 import styles from './Header.module.css'
@@ -7,7 +6,6 @@ export default function Navbar() {
 	return (
 		<nav className={styles.navbar}>
 			<div className={styles.logoContainer}>
-				{/* <div className={styles.logoCircle}></div> */}
 				<Link to='/' className={styles.logoText}>
 					Harmony of Nails
 				</Link>
@@ -28,11 +26,6 @@ export default function Navbar() {
 						Portfolio
 					</Link>
 				</li>
-				{/* <li>
-					<a href='#opinie' className={styles.link}>
-						Opinie
-					</a>
-				</li> */}
 				<li>
 					<Link to='/salony' className={styles.link}>
 						Salony
@@ -45,23 +38,9 @@ export default function Navbar() {
 				</li>
 			</ul>
 
-			<ul className={styles.navContacts}>
-				<li>
-					<FiPhone className={styles.icon} />
-					<a href='tel:+48793965530' className={styles.link}>
-						+48 793 965 530
-					</a>
-				</li>
-				<li>
-					<FiMail className={styles.icon} />
-					<a
-						href='mailto:biuro.harmonyofbeauty@gmail.com'
-						className={styles.link}
-					>
-						biuro.harmonyofbeauty@gmail.com
-					</a>
-				</li>
-			</ul>
+			<Link to='/salony' className={styles.bookButton}>
+				Umów wizytę
+			</Link>
 
 			<div className={styles.mobileMenu}>
 				<BurgerMenu />

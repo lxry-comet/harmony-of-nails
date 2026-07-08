@@ -1,16 +1,15 @@
 import { useEffect, useState } from 'react'
 import { FiMail, FiPhone, FiX } from 'react-icons/fi'
 import { Link } from 'react-router-dom'
-import headerCss from '../Header/Header.module.css'
+import { salons } from '../../json/salons' // dopasuj ścieżkę do własnej struktury
 import styles from './BurgerMenu.module.css'
 const brandTitle = 'Harmony of Nails'
 
 const links = [
 	{ href: '/uslugi', label: 'Usługi', route: true },
 	{ href: '/portfolio', label: 'Portfolio', route: true },
-	
-	{ href: '/salony', label: 'Salony', route: true  },
-	{ href: '/kontakt', label: 'Kontakt', route: true  }
+	{ href: '/salony', label: 'Salony', route: true },
+	{ href: '/kontakt', label: 'Kontakt', route: true }
 ]
 
 export default function BurgerMenu() {
@@ -96,22 +95,29 @@ export default function BurgerMenu() {
 						)}
 					</nav>
 
-					<div className={styles.contacts}>
-						<div>
-							<FiPhone className={headerCss.icon} />
-							<a href='tel:+48793965530' className={headerCss.link}>
-								+48 793 965 530
-							</a>
-						</div>
-						<div>
-							<FiMail className={headerCss.icon} />
-							<a
-								href='mailto:biuro.harmonyofbeauty@gmail.com'
-								className={headerCss.link}
-							>
-								biuro.harmonyofbeauty@gmail.com
-							</a>
-						</div>
+					<div className={styles.contactsWrap}>
+						{salons.map(salon => (
+							<div key={salon.id} className={styles.contactsGroup}>
+								<span className={styles.contactsLabel}>{salon.name}</span>
+								<div className={styles.contacts}>
+									<div>
+										<FiPhone className={styles.contactIcon} />
+										<a href={salon.phoneHref} className={styles.contactLink}>
+											{salon.phone}
+										</a>
+									</div>
+									<div>
+										<FiMail className={styles.contactIcon} />
+										<a
+											href={`mailto:${salon.email}`}
+											className={styles.contactLink}
+										>
+											{salon.email}
+										</a>
+									</div>
+								</div>
+							</div>
+						))}
 					</div>
 				</div>
 			</div>
