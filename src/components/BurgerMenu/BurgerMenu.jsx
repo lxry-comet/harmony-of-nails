@@ -3,7 +3,7 @@ import { FiMail, FiPhone, FiX } from 'react-icons/fi'
 import { Link } from 'react-router-dom'
 import { salons } from '../../json/salons' // dopasuj ścieżkę do własnej struktury
 import styles from './BurgerMenu.module.css'
-const brandTitle = 'Harmony of Nails'
+const brandTitle = 'Harmony of Beauty'
 
 const links = [
 	{ href: '/uslugi', label: 'Usługi', route: true },

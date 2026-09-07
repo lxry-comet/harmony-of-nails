@@ -22,11 +22,8 @@ export default function Kontakt() {
 						<FiPhone className={styles.icon} />
 						<div>
 							<span className={styles.infoLabel}>Telefon</span>
-							<a href='tel:+48793965530' className={styles.infoValue}>
-								+48 793 965 530
-							</a><br />
 							<a href='tel:+48733546506' className={styles.infoValue}>
-								+48 733 546 506 
+								+48 733 546 506
 							</a>
 						</div>
 					</div>
@@ -36,16 +33,10 @@ export default function Kontakt() {
 						<div>
 							<span className={styles.infoLabel}>E-mail</span>
 							<a
-								href='mailto:biuro.harmonyofbeauty@gmail.com'
+								href='mailto:Ekaterina.Sopchuk@gmail.com'
 								className={styles.infoValue}
 							>
-								biuro.harmonyofbeauty@gmail.com
-							</a>
-							<a
-								href='mailto:biuro.harmonyofbeauty@gmail.com'
-								className={styles.infoValue}
-							>
-								katrina91@op.pl
+								Ekaterina.Sopchuk@gmail.com
 							</a>
 						</div>
 					</div>
@@ -55,7 +46,8 @@ export default function Kontakt() {
 						<div>
 							<span className={styles.infoLabel}>Salony</span>
 							<span className={styles.infoValue}>
-								ul. Piłsudskiego 12 · ul. Nadmorska 8, Świnoujście
+								ul. Józefa Bema 3/2, 72-600 Świnoujście
+								<br />
 								ul. Grunwaldzka 98D, 72-600, Świnoujście
 							</span>
 						</div>
@@ -66,9 +58,9 @@ export default function Kontakt() {
 						<div>
 							<span className={styles.infoLabel}>Godziny otwarcia</span>
 							<span className={styles.infoValue}>
-								Pon – Pt: 9:00 – 19:00
+								Pon – Pt: 10:00 – 16:00
 								<br />
-								Sob: 9:00 – 17:00 · Nd: zamknięte
+								Sob – Nd: zamknięte
 							</span>
 						</div>
 					</div>

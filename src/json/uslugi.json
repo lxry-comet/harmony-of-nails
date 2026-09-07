@@ -1,30 +1,6 @@
 [
   {
-    "salon": "Salon 1",
-    "id": "pedicure",
-    "icon": "🦶",
-    "title": "Pedicure",
-    "subtitle": "Hybryda na paznokcie stóp",
-    "description": "Usługa zawiera kosmetyczne opracowanie podeszwy stopy, opracowanie płytki paznokciowej oraz skórek. Usługa wykończona jest nałożenem kremu oraz oliwki.",
-    "variants": [
-      {
-        "numOfVariants": "Wariant 1",
-        "name": "Hybryda na paznokcie stóp",
-        "price": "160 zł",
-        "time": "1g"
-      },
-      {
-        "numOfVariants": "Wariant 1",
-        "name": "Pedicure klasyczny bez malowania",
-        "price": "150 zł",
-        "time": "2g"
-      }
-    ]
-  },
-  {
-    "salon": "Salon 1",
     "id": "Stylizacja brwi",
-    "icon": "👁️",
     "title": "Stylizacja brwi",
     "subtitle": "",
     "description": "",
@@ -37,7 +13,7 @@
       },
       {
         "numOfVariants": "Wariant 2",
-        "name": "stylizacja brwi z hennąpudrową",
+        "name": "Stylizacja brwi z henną pudrową",
         "price": "70 zł",
         "time": "30min"
       },
@@ -47,7 +23,7 @@
         "price": "40 zł",
         "time": "15min"
       },
-            {
+      {
         "numOfVariants": "Wariant 4",
         "name": "Regulacja brwi + wąsik",
         "price": "50 zł",
@@ -56,9 +32,7 @@
     ]
   },
   {
-    "salon": "Salon 1",
     "id": "Depilacja",
-    "icon": "🪒",
     "title": "Depilacja",
     "subtitle": "",
     "description": "",
@@ -84,100 +58,63 @@
     ]
   },
   {
-    "salon": "Salon 1",
     "id": "Stylizacja rzęs",
-    "icon": "👁️",
     "title": "Stylizacja rzęs",
     "subtitle": "",
     "description": "",
     "variants": [
       {
+        "numOfVariants": "",
+        "name": "Effect Kim",
+        "price": "190 zł",
+        "time": "1g 50min"
+      },
+      {
         "numOfVariants": "Wariant 1",
         "name": "Założenie rzęs 'Połówka'",
-        "price": "90 zł",
+        "price": "100 zł",
         "time": "1g"
       },
       {
         "numOfVariants": "Wariant 2",
         "name": "Założenie rzęs metodą 1:1",
-        "price": "150 zł",
+        "price": "160 zł",
         "time": "1g 30min"
       },
       {
         "numOfVariants": "Wariant 3",
         "name": "Maskara",
-        "price": "160 zł",
+        "price": "170 zł",
         "time": "1g 45min"
       },
       {
         "numOfVariants": "Wariant 4",
         "name": "Mokry Efekt",
-        "price": "170 zł",
+        "price": "180 zł",
         "time": "1g 50min"
       },
       {
         "numOfVariants": "Wariant 5",
         "name": "Założenie 2:1",
-        "price": "170 zł",
+        "price": "180 zł",
         "time": "1g 50min"
       },
       {
         "numOfVariants": "Wariant 6",
         "name": "Założenie 3-4D",
-        "price": "180 zł",
+        "price": "190 zł",
         "time": "2g"
       },
       {
         "numOfVariants": "Wariant 7",
         "name": "Założenie 5-6D",
-        "price": "160 zł",
-        "time": "2g "
-      }
-    ]
-  },
-  
-  {
-    "salon": "Salon 2",
-    "id": "Uzupełnienie rzęs",
-    "icon": "",
-    "title": "Uzupełnienie rzęs",
-    "subtitle": "Uzupełnienie rzęs",
-    "description": "",
-    "variants": [
-      {
-        "numOfVariants": "Wariant 1",
-        "name": "Uzupełnienie rzęs",
-        "price": "120 zł",
-        "time": "1g 25min"
+        "price": "200 zł",
+        "time": "2g"
       }
     ]
   },
   {
-    "salon": "Salon 2",
-    "id": "Pedicure",
-    "icon": "",
-    "title": "Uzupełnienie rzęs",
-    "subtitle": "Uzupełnienie rzęs",
-    "description": "",
-    "variants": [
-      {
-        "numOfVariants": "Wariant 1",
-        "name": "Wariant 1",
-        "price": "130 zł",
-        "time": "1g 25min"
-      },
-      {
-        "numOfVariants": "Wariant 2",
-        "name": "Pedicure hybrydowy z opracowaniem podeszwy stóp",
-        "price": "150 zł",
-        "time": "1g 25min"
-      }
-    ]
-  },
-  {
-    "salon": "Salon 2",
     "id": "Połówka",
-    "icon": "",
     "title": "Uzupełnienie",
     "subtitle": "",
     "description": "",
@@ -197,9 +134,7 @@
     ]
   },
   {
-    "salon": "Salon 2",
     "id": "Stylizacja/Regulacja Brwi",
-    "icon": "",
     "title": "Stylizacja/Regulacja Brwi",
     "subtitle": "",
     "description": "",
@@ -213,9 +148,7 @@
     ]
   },
   {
-    "salon": "Salon 2",
     "id": "Henna rzęs",
-    "icon": "",
     "title": "Henna rzęs",
     "subtitle": "",
     "description": "",

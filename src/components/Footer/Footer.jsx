@@ -44,7 +44,7 @@ export default function Footer() {
 				))}
 			</div>
 			<div className={styles.bottomRow}>
-				© 2026 Harmony of Nails. Wszystkie prawa zastrzeżone.
+				© 2026 Harmony of Beauty. Wszystkie prawa zastrzeżone.
 			</div>
 		</footer>
 	)

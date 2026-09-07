@@ -20,7 +20,7 @@ export const salons = [
 		id: 'uzdrowisko',
 		tag: 'Salon 2',
 		name: 'Beautiful Life',
-		district: 'Po prawej stronie od kebaba',
+		district: ' Centrum miasta, naprzeciwko Rossmanna',
 		address: 'ul. Grunwaldzka 98D, 72-600 Świnoujście',
 		phone: '+48 733 546 506',
 		phoneHref: 'tel:+48733546506',
