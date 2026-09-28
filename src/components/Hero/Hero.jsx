@@ -14,8 +14,7 @@ export default function Hero() {
 					Harmony <em>of Beauty</em>
 				</h1>
 				<p className={styles.description}>
-					Manicure, pedicure oraz stylizacje — dbamy o komfort, czystość i
-					perfekcyjne wykończenie.
+					Dbamy o komfort, czystość i perfekcyjne wykończenie.
 				</p>
 				<div className={styles.buttons}>
 					<Link to='/uslugi' className={styles.btnOutline}>
